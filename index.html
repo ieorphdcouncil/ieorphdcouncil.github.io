@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Council</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .navbar-right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        .home-title {
+            font-size: 36pt;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+            max-width: 90%; /* Limit width to 90% of container */
+            white-space: nowrap; /* Prevent wrapping */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Add ellipsis (...) for long text */
+        }
+        .background-image {
+            width: 100%;
+            height: 275px;
+            background-image: url('photos/activities/dinner.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            opacity: 0.9;
+        }
+        .page-content {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 180px;
+            margin-right: 180px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="photos/logo.png">
+            <span><b>IEOR PhD Council</b></span>
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+        </div>
+    </nav>
+
+    <div class="background-image">
+        <h1 class="home-title">Columbia IEOR PhD Council</h1>
+    </div>
+
+    <div class="page-content">
+            <p>The PhD Council at <a href="https://ieor.columbia.edu/">Columbia IEOR</a> exists to advocate for and foster community within the Columbia IEOR PhDs. We do so by pursuing activities and facilitating programming that furthers the interests of the PhD students before, during, and after the program.</p>
+    </div>
+    <div class="page-content">
+            <b style="font-size: 20px; color: blue;">Upcoming Events:</b>
+            <ul>
+                <li style=" margin-bottom: 5px;">2024/01/30 PhD tutorial: Christian Fiedler</li>
+                <li style=" margin-bottom: 5px;"></li>
+                <li style=" margin-bottom: 5px;"></li>
+            </ul>
+    </div>
+</body>
+</html>

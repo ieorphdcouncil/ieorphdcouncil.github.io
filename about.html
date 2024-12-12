@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Council Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .navbar-right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        /* Page Content Styling */
+        .page {
+            display: none; /* Ensure pages are hidden by default */
+        }
+        .page.active {
+            display: block; /* Show active page */
+        }
+        .page-content {
+            padding: 20px;
+        }
+        .home-background {
+            position: relative;
+            text-align: center;
+        }
+        .home-background img {
+            width: 100%;
+            opacity: 0.5;
+        }
+        .home-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36pt;
+            color: white;
+        }
+        /* Members Section Styling */
+        .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between all members */
+        }
+        .member {
+            text-align: center;
+            width: calc(25% - 20px); /* 4 members per row with gap consideration */
+            max-width: 250px;
+        }
+        .member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .member-name {
+            font-size: 12pt;
+            margin-top: 10px;
+        }
+        .member-position {
+            font-size: 10pt;
+            color: #666;
+        }
+        .events-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .events-section img {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/photos/logo.png">
+                <span><b>IEOR PhD Council</b></span>
+            </div>
+            <div class="navbar-right">
+                <a href="index.html" data-page="home">Home</a>
+                <a href="about.html" data-page="about">About</a>
+                <a href="events.html" data-page="events">Events</a>
+            </div>
+        </nav>
+
+        <div class="page-content home-background">
+            <img src="photos/logo.png" alt="Background">
+            <div class="home-title"><b>IEOR PhD Council</b></div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="photos/logo.png">
+                <span><b>IEOR PhD Council</b></span>
+            </div>
+            <div class="navbar-right">
+                <a href="index.html" data-page="home">Home</a>
+                <a href="about.html" data-page="about">About</a>
+                <a href="events.html" data-page="events">Events</a>
+            </div>
+        </nav>
+
+        <div class="page-content">
+            
+            <h2 style="text-align: center; font-size: 24pt;">Our Members</h2>
+            
+            <div class="members-container">
+                <div class="member">
+                    <img src="photos/members/darshan.jpg">
+                    <div class="member-name"><a href="https://darshanc.com/">Darshan Chakrabarti</a></div>
+                    <div class="member-position">President</div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/cherlin.jpg">
+                    <div class="member-name"><a href="https://ieor.columbia.edu/content/cherlin-zhu">Cherlin Zhu</a></div>
+                    <div class="member-position">Vice-President</div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/christian.jpg">
+                    <div class="member-name"><a href="https://c-fiedler.github.io/">Christian Fiedler</a></div>
+                    <div class="member-position">Treasurer</div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/jacob.jpg">
+                    <div class="member-name"><a href="https://jacobf18.github.io/">Jacob Feitelberg</a></div>
+                    <div class="member-position">Secretary</div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/salam.jpg">
+                    <div class="member-name"><a href="https://ieor.columbia.edu/content/salam-afiouni">Salam Afiouni</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/abdellah.png">
+                    <div class="member-name"><a href="https://sites.google.com/view/abdellahaznag/">Abdellah Aznag</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/chengpiao.jpg">
+                    <div class="member-name"><a href="https://ch3702.github.io/">Chengpiao Huang</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/tianlong.jpg">
+                    <div class="member-name"><a href="https://tianlong-nan.github.io/">Tianlong Nan</a></div>
+                    <div class="member-position"> </div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/jiaqi.jpeg">
+                    <div class="member-name"><a href="https://jiaqishi777.github.io/">Jiaqi Shi</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/matias.jpg">
+                    <div class="member-name"><a href="https://matiasvm.com/">Matias Villagra</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/aapeli.jpg">
+                    <div class="member-name"><a href="https://www.aapelivuorinen.com/">Aapeli Vuorinen</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/tianyu.jpg">
+                    <div class="member-name"><a href="https://wangtianyu61.github.io/">Tianyu Wang</a></div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/david.jpeg">
+                    <div class="member-name">David Yang</div>
+                    <div class="member-position"></div>
+                </div>
+                <div class="member">
+                    <img src="photos/members/frito.jpeg">
+                    <div class="member-name">Frito</div>
+                    <div class="member-position">mascot</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Page -->
+    <div id="events" class="page">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/api/placeholder/50/50" alt="Council Logo">
+                <span>Council</span>
+            </div>
+            <div class="navbar-right">
+                <a href="index.html" data-page="home">Home</a>
+                <a href="about.html" data-page="about">About</a>
+                <a href="events.html" data-page="events">Events</a>
+            </div>
+        </nav>
+
+        <div class="page-content">
+            <h1 style="text-align: center; font-size: 36pt;">Tutorial</h1>
+            
+            <div class="events-section">
+                <img src="/api/placeholder/500/300" alt="Event 1">
+                <img src="/api/placeholder/500/300" alt="Event 2">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to get the current page from the URL
+        function getCurrentPage() {
+            const path = window.location.pathname;
+            if (path.includes('about.html')) return 'about';
+            if (path.includes('events.html')) return 'events';
+            return 'home';
+        }
+
+        // Show the correct page based on the current URL
+        function showCurrentPage() {
+            const currentPage = getCurrentPage();
+            
+            // Remove active class from all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Add active class to current page
+            document.getElementById(currentPage).classList.add('active');
+        }
+
+        // Call showCurrentPage when the page loads
+        showCurrentPage();
+
+        // Navigation script
+        document.querySelectorAll('.navbar-right a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = e.target.getAttribute('data-page');
+                
+                // Redirect to the appropriate HTML file
+                window.location.href = e.target.getAttribute('href');
+            });
+        });
+    </script>
+</body>
+</html>

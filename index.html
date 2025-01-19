@@ -57,6 +57,18 @@
             margin-left: 15%;
             margin-right: 15%;
         }
+        .calendar-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        iframe {
+            border: 0;
+            width: 90%; /* Increase width to 90% */
+            height: 800px; /* Increase height to 800px */
+            frameborder: 0;
+            scrolling: no;
+        }
     </style>
 </head>
 <body>
@@ -76,13 +88,8 @@
     <div class="page-content">
             <p>The PhD Council at <a href="https://ieor.columbia.edu/">Columbia IEOR</a> exists to advocate for and foster community within the Columbia IEOR PhDs. We do so by pursuing activities and facilitating programming that furthers the interests of the PhD students before, during, and after the program.</p>
     </div>
-    <div class="page-content">
-            <b style="font-size: 20px; color: blue;">Upcoming Events:</b>
-            <ul>
-                <li style=" margin-bottom: 5px;">2025/01/30 PhD tutorial: Christian Fiedler</li>
-                <li style=" margin-bottom: 5px;">2025/02/06 PhD tutorial: Jiaqi Shi</li>
-                <li style=" margin-bottom: 5px;"></li>
-            </ul>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=c_6d8d3217ce4e9a01cad5c7a4f767c7e9833e33f7516f31cd702e1ad389eda592%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
     </div>
 </body>
 </html>

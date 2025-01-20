@@ -90,6 +90,39 @@
         .events-section img {
             width: 45%;
         }
+        .mascot-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .mascot-container h2 {
+            font-size: 20pt; /* Reduce font size for "Our Mascot" */
+        }
+        .mascot {
+            text-align: center;
+            width: calc(20.25% - 20px); /* Shrink width by an additional 10% */
+            max-width: 202.5px; /* Shrink max-width by an additional 10% */
+            margin: 0 auto; /* Center the mascot */
+        }
+        .mascot img {
+            width: 100%;
+            height: 202.5px; /* Shrink height by an additional 10% */
+            object-fit: cover;
+        }
+        .mascot-name {
+            font-size: 14pt;
+            margin-top: 10px;
+        }
+        .mascot-position {
+            font-size: 12pt;
+            color: #666;
+        }
+        .executive-board-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between all members */
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
@@ -128,10 +161,8 @@
         </nav>
 
         <div class="page-content">
-            
-            <h2 style="text-align: center; font-size: 24pt;">Our Members</h2>
-            
-            <div class="members-container">
+            <h2 style="text-align: center; font-size: 24pt;">Executive Board</h2>
+            <div class="executive-board-container">
                 <div class="member">
                     <img src="photos/members/darshan.jpg">
                     <div class="member-name"><a href="https://darshanc.com/">Darshan Chakrabarti</a></div>
@@ -152,6 +183,10 @@
                     <div class="member-name"><a href="https://jacobf18.github.io/">Jacob Feitelberg</a></div>
                     <div class="member-position">Secretary</div>
                 </div>
+            </div>
+
+            <h2 style="text-align: center; font-size: 24pt;">Our Members</h2>
+            <div class="members-container">
                 <div class="member">
                     <img src="photos/members/salam.jpg">
                     <div class="member-name"><a href="https://ieor.columbia.edu/content/salam-afiouni">Salam Afiouni</a></div>
@@ -197,10 +232,13 @@
                     <div class="member-name">David Yang</div>
                     <div class="member-position"></div>
                 </div>
-                <div class="member">
+            </div>
+
+            <div class="mascot-container">
+                <h2 style="text-align: center;">Our Mascot</h2>
+                <div class="mascot">
                     <img src="photos/members/frito.jpeg">
-                    <div class="member-name">Frito</div>
-                    <div class="member-position">mascot</div>
+                    <div class="mascot-name">Frito</div>
                 </div>
             </div>
         </div>

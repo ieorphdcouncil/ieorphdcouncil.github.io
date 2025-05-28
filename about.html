@@ -123,6 +123,35 @@
             gap: 20px; /* Space between all members */
             margin-top: 40px;
         }
+        /* ---- dropdown ---- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 8px 12px;
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -135,7 +164,13 @@
             </div>
             <div class="navbar-right">
                 <a href="index.html" data-page="home">Home</a>
-                <a href="about.html" data-page="about">About</a>
+                <div class="dropdown">
+                    <span class="dropbtn">About ▾</span>
+                    <div class="dropdown-content">
+                    <a href="about.html" data-page="about">About</a>
+                    <a href="alumni.html" data-page="alumni">Alumni</a>
+                    </div>
+                </div>                
                 <a href="events.html" data-page="events">Events</a>
             </div>
         </nav>
@@ -155,7 +190,12 @@
             </div>
             <div class="navbar-right">
                 <a href="index.html" data-page="home">Home</a>
-                <a href="about.html" data-page="about">About</a>
+                <div class="dropdown">
+                    <span class="dropbtn">About ▾</span>
+                    <div class="dropdown-content">
+                    <a href="alumni.html" data-page="alumni">Alumni</a>
+                    </div>
+                </div>                
                 <a href="events.html" data-page="events">Events</a>
             </div>
         </nav>
@@ -171,24 +211,19 @@
             <h2 style="text-align: center; font-size: 24pt;">Executive Board</h2>
             <div class="executive-board-container">
                 <div class="member">
-                    <img src="photos/members/darshan.jpg">
-                    <div class="member-name"><a href="https://darshanc.com/">Darshan Chakrabarti</a></div>
-                    <div class="member-position">President</div>
-                </div>
-                <div class="member">
                     <img src="photos/members/cherlin.jpg">
                     <div class="member-name"><a href="https://ieor.columbia.edu/content/cherlin-zhu">Cherlin Zhu</a></div>
-                    <div class="member-position">Vice-President</div>
-                </div>
+                    <div class="member-position">President</div>
+                </div>                
+                <div class="member">
+                    <img src="photos/members/david.jpeg">
+                    <div class="member-name"><a href="https://dyang.info">David Yang</a></div>
+                    <div class="member-position">Vice President</div>
+                </div>                
                 <div class="member">
                     <img src="photos/members/christian.jpg">
                     <div class="member-name"><a href="https://c-fiedler.github.io/">Christian Fiedler</a></div>
                     <div class="member-position">Treasurer</div>
-                </div>
-                <div class="member">
-                    <img src="photos/members/jacob.jpg">
-                    <div class="member-name"><a href="https://jacobf18.github.io/">Jacob Feitelberg</a></div>
-                    <div class="member-position">Secretary</div>
                 </div>
             </div>
 
@@ -200,45 +235,35 @@
                     <div class="member-position"></div>
                 </div>
                 <div class="member">
-                    <img src="photos/members/abdellah.png">
-                    <div class="member-name"><a href="https://sites.google.com/view/abdellahaznag/">Abdellah Aznag</a></div>
+                    <img src="photos/members/jacob.jpg">
+                    <div class="member-name"><a href="https://jacobf18.github.io/">Jacob Feitelberg</a></div>
                     <div class="member-position"></div>
-                </div>
+                </div>                
+                <div class="member">
+                    <img src="photos/members/kyran.jpeg">
+                    <div class="member-name">Kyran Flynn</div>
+                    <div class="member-position"></div>
+                </div>                
                 <div class="member">
                     <img src="photos/members/chengpiao.jpg">
                     <div class="member-name"><a href="https://ch3702.github.io/">Chengpiao Huang</a></div>
                     <div class="member-position"></div>
                 </div>
                 <div class="member">
+                    <img src="photos/members/derek.jpg">
+                    <div class="member-name">Derek Long</div>
+                    <div class="member-position"></div>
+                </div>                                
+                <div class="member">
                     <img src="photos/members/tianlong.jpg">
                     <div class="member-name"><a href="https://tianlong-nan.github.io/">Tianlong Nan</a></div>
                     <div class="member-position"> </div>
                 </div>
                 <div class="member">
-                    <img src="photos/members/jiaqi.jpeg">
-                    <div class="member-name"><a href="https://jiaqishi777.github.io/">Jiaqi Shi</a></div>
+                    <img src="photos/members/jonathan.jpg">
+                    <div class="member-name">Jonathan Tan</div>
                     <div class="member-position"></div>
-                </div>
-                <div class="member">
-                    <img src="photos/members/matias.jpg">
-                    <div class="member-name"><a href="https://matiasvm.com/">Matias Villagra</a></div>
-                    <div class="member-position"></div>
-                </div>
-                <div class="member">
-                    <img src="photos/members/aapeli.jpg">
-                    <div class="member-name"><a href="https://www.aapelivuorinen.com/">Aapeli Vuorinen</a></div>
-                    <div class="member-position"></div>
-                </div>
-                <div class="member">
-                    <img src="photos/members/tianyu.jpg">
-                    <div class="member-name"><a href="https://wangtianyu61.github.io/">Tianyu Wang</a></div>
-                    <div class="member-position"></div>
-                </div>
-                <div class="member">
-                    <img src="photos/members/david.jpeg">
-                    <div class="member-name"><a href="https://sites.google.com/view/dyang5/">David Yang</a></div>
-                    <div class="member-position"></div>
-                </div>
+                </div>                                
             </div>
 
             <div class="mascot-container">
@@ -260,7 +285,13 @@
             </div>
             <div class="navbar-right">
                 <a href="index.html" data-page="home">Home</a>
-                <a href="about.html" data-page="about">About</a>
+                <div class="dropdown">
+                    <span class="dropbtn">About ▾</span>
+                    <div class="dropdown-content">
+                    <a href="about.html" data-page="about">About</a>
+                    <a href="alumni.html" data-page="alumni">Alumni</a>
+                    </div>
+                </div>                
                 <a href="events.html" data-page="events">Events</a>
             </div>
         </nav>
@@ -280,6 +311,7 @@
         function getCurrentPage() {
             const path = window.location.pathname;
             if (path.includes('about.html')) return 'about';
+            if (path.includes('alumni.html')) return 'alumni';
             if (path.includes('events.html')) return 'events';
             return 'home';
         }
